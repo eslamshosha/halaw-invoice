@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <title>HALAW KAKAW</title>
+  </head>
+  <style>
+    @font-face {
+      font-family: "Cairo";
+      src: url("webfonts/cairo/Cairo-ExtraLight.woff2") format("woff2"),
+        url("webfonts/cairo/Cairo-ExtraLight.woff") format("woff"),
+        url("webfonts/cairo/Cairo-ExtraLight.ttf") format("truetype");
+      font-weight: 200;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Cairo";
+      src: url("webfonts/cairo/Cairo-Light.woff2") format("woff2"),
+        url("webfonts/cairo/Cairo-Light.woff") format("woff"),
+        url("webfonts/cairo/Cairo-Light.ttf") format("truetype");
+      font-weight: 300;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Cairo";
+      src: url("webfonts/cairo/Cairo-Regular.woff2") format("woff2"),
+        url("webfonts/cairo/Cairo-Regular.woff") format("woff"),
+        url("webfonts/cairo/Cairo-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Cairo";
+      src: url("webfonts/cairo/Cairo-SemiBold.woff2") format("woff2"),
+        url("webfonts/cairo/Cairo-SemiBold.woff") format("woff"),
+        url("webfonts/cairo/Cairo-SemiBold.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Cairo";
+      src: url("webfonts/cairo/Cairo-Bold.woff2") format("woff2"),
+        url("webfonts/cairo/Cairo-Bold.woff") format("woff"),
+        url("webfonts/cairo/Cairo-Bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: "Cairo";
+      src: url("webfonts/cairo/Cairo-Black.woff2") format("woff2"),
+        url("webfonts/cairo/Cairo-Black.woff") format("woff"),
+        url("webfonts/cairo/Cairo-Black.ttf") format("truetype");
+      font-weight: 900;
+      font-style: normal;
+    }
+    body {
+      font-family: "Cairo", sans-serif;
+      margin: 0;
+      background-color: #fff;
+      color: #292b82;
+    }
+    img {
+      max-width: 100%;
+    }
+    .container {
+      max-width: 991px;
+      margin: 0 auto;
+      padding: 0 20px;
+      text-transform: capitalize;
+    }
+    .header-invoice {
+      padding: 30px 20px 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      width: 140px;
+      margin: 0;
+    }
+    .logo-1 {
+      width: 80px;
+      margin: 0;
+    }
+    .logo img {
+      width: 100%;
+    }
+    .header-info {
+      color: #292b82;
+      text-align: center;
+    }
+    .invoice-number {
+      font-weight: 400;
+      font-size: 20px;
+      color: #e40c0c;
+      line-height: 20px;
+    }
+    .invoice-main {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    .invoice-date {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .date-slash {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding: 0 30px;
+    }
+    .invoice-head {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #292b82;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 22px;
+      padding-bottom: 2px;
+    }
+    .invoice-total {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .total {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .total-text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .total-box {
+      width: 70px;
+      height: 40px;
+      border-radius: 8px;
+      border: 1px solid #292b82;
+    }
+    .invoice-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px 0;
+    }
+    .content-item {
+      display: flex;
+      align-items: flex-end;
+      font-weight: 700;
+      font-size: 16px;
+      gap: 1px;
+    }
+    .content-item span {
+      flex-shrink: 0;
+    }
+    .content-info {
+      border-bottom: 1px dashed #292b82;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .sign-head {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-weight: 700;
+      font-size: 18px;
+      padding-bottom: 30px;
+      border-bottom: 1px dashed #292b82;
+      width: max-content;
+      margin-bottom: 20px;
+    }
+    @media print {
+      .table_group {
+        padding: 0 30px;
+        overflow: hidden;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="header-invoice">
+        <figure class="logo-1">
+          <img src="ar-logo.webp" alt="logo" />
+        </figure>
+        <figure class="logo">
+          <img src="logo.png" alt="logo" />
+        </figure>
+        <figure class="logo-1">
+          <img src="en-logo.png" alt="logo" />
+        </figure>
+      </div>
+      <div class="invoice-number">0256</div>
+      <div class="invoice-main">
+        <div class="invoice-date">
+          <span>التاريخ:</span>
+          <span class="date-slash"><span>/</span><span>/</span></span>
+          <span>:Date</span>
+        </div>
+        <div class="invoice-head">
+          <span>ســـنـــد قـــبـــض</span>
+          <span>Receipt voucher</span>
+        </div>
+        <div class="invoice-total">
+          <div class="total">
+            <div class="total-text">
+              <span>فلس</span>
+              <span>fils</span>
+            </div>
+            <span class="total-box"></span>
+          </div>
+          <div class="total">
+            <div class="total-text">
+              <span>دينار</span>
+              <span>K.D.</span>
+            </div>
+            <span class="total-box"></span>
+          </div>
+        </div>
+      </div>
+      <div class="invoice-content">
+        <div class="content-item">
+          <span>وصلنا من السيد / السادة</span>
+          <div class="content-info"></div>
+          <span>received from ms / mrs</span>
+        </div>
+        <div class="content-item">
+          <span>مبلغ وقدره</span>
+          <div class="content-info"></div>
+          <span>the sum of</span>
+        </div>
+        <div class="content-item">
+          <span>نقداً</span>
+          <div class="content-info"></div>
+          <span>cash</span>
+        </div>
+        <div class="content-item">
+          <span>وذلك عن</span>
+          <div class="content-info"></div>
+          <span>purpose</span>
+        </div>
+      </div>
+      <div class="invoice-sign">
+        <div class="sign-head">
+          <span>توقيع المستلم</span>
+          <span>received</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
